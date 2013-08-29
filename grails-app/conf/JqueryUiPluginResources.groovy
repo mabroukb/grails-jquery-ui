@@ -1,11 +1,5 @@
 import grails.util.Holders
 
-// Resource declarations for Resources plugin
-// This is a bit ugly, we'll find a way to make this better in future
-//def appCtx = org.codehaus.groovy.grails.commons.ApplicationHolder.application.mainContext
-
-//def jqueryUiPluginDef = Holders.grailsApplication.config.grails.plugin.jqueryui
-
 def plugin = Holders.getPluginManager().getGrailsPlugin('jquery-ui')
 def jqver = plugin.version
 

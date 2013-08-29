@@ -61,7 +61,7 @@ class JqueryUiTagLib {
     def resources = { attrs ->
         def theme = attrs.theme ?: 'ui-lightness'
         def plugin = pluginManager.getGrailsPlugin('jquery-ui')
-        def jqver = plugin.instance.JQUERYUI_VERSION
+        def jqver = plugin.version
         // If a plugin is using THIS plugin, if they change theme they need to be able
         // to specify their plugin name so we can load the theme!
         def plug = attrs.plugin ? attrs.plugin : 'jqueryUi'
